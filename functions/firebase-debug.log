@@ -1,0 +1,49 @@
+[debug] [2021-02-13T17:56:28.883Z] ----------------------------------------------------------------------
+[debug] [2021-02-13T17:56:28.884Z] Command:       /usr/local/bin/firebase /home/lucas/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase functions:shell
+[debug] [2021-02-13T17:56:28.885Z] CLI Version:   9.3.0
+[debug] [2021-02-13T17:56:28.885Z] Platform:      linux
+[debug] [2021-02-13T17:56:28.885Z] Node Version:  v12.18.1
+[debug] [2021-02-13T17:56:28.885Z] Time:          Sat Feb 13 2021 14:56:28 GMT-0300 (GMT-03:00)
+[debug] [2021-02-13T17:56:28.885Z] ----------------------------------------------------------------------
+[debug] [2021-02-13T17:56:28.885Z] 
+[debug] [2021-02-13T17:56:28.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-13T17:56:28.889Z] > authorizing via signed-in user
+[debug] [2021-02-13T17:56:28.889Z] [iam] checking project lucas-superchat for permissions ["firebase.projects.get"]
+[debug] [2021-02-13T17:56:28.891Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/lucas-superchat:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-02-13T17:56:29.832Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Feb 2021 17:56:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=806","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-13T17:56:29.840Z] [functions] Using node@12 from host.
+[debug] [2021-02-13T17:56:29.841Z] defaultcredentials: writing to file /home/lucas/.config/firebase/lucas_mirand.senai_gmail.com_application_default_credentials.json
+[debug] [2021-02-13T17:56:29.842Z] DEBUG: Setting GAC to /home/lucas/.config/firebase/lucas_mirand.senai_gmail.com_application_default_credentials.json
+[debug] [2021-02-13T17:56:29.843Z] > refreshing access token with scopes: []
+[debug] [2021-02-13T17:56:29.843Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-13T17:56:30.070Z] <<< HTTP RESPONSE 200 {"date":"Sat, 13 Feb 2021 17:56:30 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-13T17:56:30.078Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lucas-superchat/adminSdkConfig [none]
+[debug] [2021-02-13T17:56:31.190Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lucas-superchat/adminSdkConfig 200
+[debug] [2021-02-13T17:56:31.190Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lucas-superchat/adminSdkConfig {"projectId":"lucas-superchat","storageBucket":"lucas-superchat.appspot.com","locationId":"us-central"}
+[debug] [2021-02-13T17:56:31.253Z] [functions] Watching "/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions" for Cloud Functions...
+[debug] [2021-02-13T17:56:31.270Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-02-13T17:56:31.270Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-02-13T17:56:31.271Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-02-13T17:56:31.271Z] DEBUG: [worker-~diagnostic~-80a6b50d-6f49-4f83-b228-5bb43798960b]: Assigning socketPath: /tmp/fire_emu_18576.sock
+[debug] [2021-02-13T17:56:31.271Z] DEBUG: [worker-~diagnostic~-80a6b50d-6f49-4f83-b228-5bb43798960b]: BUSY
+[debug] [2021-02-13T17:56:31.419Z] DEBUG: [runtime-status] [18576] Functions runtime initialized. {"cwd":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions","node_version":"12.18.1"}
+[debug] [2021-02-13T17:56:31.420Z] DEBUG: [runtime-status] [18576] Disabled runtime features: undefined
+[debug] [2021-02-13T17:56:31.421Z] DEBUG: [runtime-status] [18576] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2021-02-13T17:56:31.421Z] DEBUG: [runtime-status] [18576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-02-13T17:56:31.422Z] DEBUG: [runtime-status] [18576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-02-13T17:56:31.423Z] DEBUG: [runtime-status] [18576] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-02-13T17:56:31.424Z] DEBUG: [runtime-status] [18576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-02-13T17:56:31.451Z] DEBUG: [runtime-status] [18576] Checked functions.config() {"config":{}}
+[debug] [2021-02-13T17:56:31.451Z] DEBUG: [runtime-status] [18576] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.1","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2021-02-13T17:56:31.452Z] DEBUG: [runtime-status] [18576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-02-13T17:56:31.452Z] DEBUG: [runtime-status] [18576] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2021-02-13T17:56:31.453Z] DEBUG: [runtime-status] [18576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2021-02-13T17:56:31.453Z] DEBUG: [runtime-status] [18576] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"/home/lucas/home/lucas/www/udemy/my-projects/superchat/functions/node_modules/firebase-admin/lib/index.js"}}
+[debug] [2021-02-13T17:56:31.455Z] DEBUG: [runtime-status] [18576] initializeApp(DEFAULT) {"storageBucket":"lucas-superchat.appspot.com","projectId":"lucas-superchat"}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2021-02-13T17:56:31.581Z] [functions[detectEvilUsers]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: detectEvilUsers 
+[warn] ⚠  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub 
+[debug] [2021-02-13T17:56:31.586Z] DEBUG: [worker-~diagnostic~-80a6b50d-6f49-4f83-b228-5bb43798960b]: IDLE
